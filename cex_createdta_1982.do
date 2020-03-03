@@ -1,1 +1,618 @@
+/* -----------------------------------------------------------------------------
+                                      1982
+----------------------------------------------------------------------------- */
 
+set more off
+/* input the location of ASCII files */ 
+
+cd "1982"
+
+local year 82
+
+foreach cdate of numlist 1 2 3 4 {
+
+
+/// FMLY FILES
+
+infix ///
+	NEWID	1	-	7	///		8
+	intno	8 - 8 ///
+str	ACCESS	9	-	9	///	CHAR	1
+str	ACCESS_	10	-	10	///	CHAR	1
+	AGE_REF	11	-	13	///		3
+str	AGE_REF_	14	-	14	///	CHAR	1
+	AGE2	15	-	17	///		3
+str	AGE2_	18	-	18	///	CHAR	1
+str	AIR_FUEL	19	-	19	///	CHAR	1
+str	AIR__UEL	20	-	20	///	CHAR	1
+str	AIR_TYPE	21	-	21	///	CHAR	1
+str	AIR__YPE	22	-	22	///	CHAR	1
+str	AIRCOND	23	-	23	///	CHAR	1
+str	AIRCOND_	24	-	24	///	CHAR	1
+str	APARTMNT	25	-	25	///	CHAR	1
+str	APAR_MNT	26	-	26	///	CHAR	1
+	APT_NOQ	27	-	30	///		4
+str	APT_NOQ_	31	-	31	///	CHAR	1
+	AS_COMP1	32	-	33	///		2
+str	AS_C_MP1	34	-	34	///	CHAR	1
+	AS_COMP2	35	-	36	///		2
+str	AS_C_MP2	37	-	37	///	CHAR	1
+	AS_COMP3	38	-	39	///		2
+str	AS_C_MP3	40	-	40	///	CHAR	1
+	AS_COMP4	41	-	42	///		2
+str	AS_C_MP4	43	-	43	///	CHAR	1
+	AS_COMP5	44	-	45	///		2
+str	AS_C_MP5	46	-	46	///	CHAR	1
+str	BARN	47	-	47	///	CHAR	1
+str	BARN_	48	-	48	///	CHAR	1
+	BASEMENT	49	-	51	///		3
+str	BASE_ENT	52	-	52	///	CHAR	1
+	BATHRMQ	53	-	55	///		3
+str	BATHRMQ_	56	-	56	///	CHAR	1
+	BEDROOMQ	57	-	59	///		3
+str	BEDR_OMQ	60	-	60	///	CHAR	1
+str	BLS_URBN	61	-	61	///	CHAR	1
+str	BOTTLED	62	-	63	///	CHAR	2
+str	BOTTLED_	64	-	64	///	CHAR	1
+	BSINVSTX	65	-	74	///		10
+str	BSIN_STX	75	-	75	///	CHAR	1
+str	BUILDING	76	-	77	///	CHAR	2
+str	BUIL_ING	78	-	78	///	CHAR	1
+str	BUILT	79	-	80	///	CHAR	2
+str	BUILT_	81	-	81	///	CHAR	1
+	CBSGFTX	82	-	89	///		8
+str	CBSGFTX_	90	-	90	///	CHAR	1
+	CKBKACTX	91	-	100	///		10
+str	CKBK_CTX	101	-	101	///	CHAR	1
+str	CLLGEQTR	102	-	102	///	CHAR	1
+str	CLLG_QTR	103	-	103	///	CHAR	1
+	CNTEDORX	104	-	111	///		8
+str	CNTE_ORX	112	-	112	///	CHAR	1
+	CNTRCHRX	113	-	120	///		8
+str	CNTR_HRX	121	-	121	///	CHAR	1
+	CNTRELGX	122	-	129	///		8
+str	CNTR_LGX	130	-	130	///	CHAR	1
+	CNTRPOLX	131	-	138	///		8
+str	CNTR_OLX	139	-	139	///	CHAR	1
+str	COALCOOK	140	-	141	///	CHAR	2
+str	COAL_OOK	142	-	142	///	CHAR	1
+	COLLEXPX	143	-	150	///		8
+str	COLL_XPX	151	-	151	///	CHAR	1
+str	COMKITCH	152	-	152	///	CHAR	1
+str	COMK_TCH	153	-	153	///	CHAR	1
+str	COMPBND	154	-	154	///	CHAR	1
+str	COMPBND_	155	-	155	///	CHAR	1
+	COMPBNDX	156	-	163	///		8
+str	COMP_NDX	164	-	164	///	CHAR	1
+str	COMPCKG	165	-	165	///	CHAR	1
+str	COMPCKG_	166	-	166	///	CHAR	1
+	COMPCKGX	167	-	174	///		8
+str	COMP_KGX	175	-	175	///	CHAR	1
+	COMPENSX	176	-	183	///		8
+str	COMP_NSX	184	-	184	///	CHAR	1
+str	COMPLET1	185	-	185	///	CHAR	1
+str	COMP_ET1	186	-	186	///	CHAR	1
+str	COMPLET2	187	-	187	///	CHAR	1
+str	COMP_ET2	188	-	188	///	CHAR	1
+str	COMPOWD	189	-	189	///	CHAR	1
+str	COMPOWD_	190	-	190	///	CHAR	1
+	COMPOWDX	191	-	198	///		8
+str	COMP_WDX	199	-	199	///	CHAR	1
+str	COMPSAV	200	-	200	///	CHAR	1
+str	COMPSAV_	201	-	201	///	CHAR	1
+	COMPSAVX	202	-	209	///		8
+str	COMP_AVX	210	-	210	///	CHAR	1
+str	COMPSEC	211	-	211	///	CHAR	1
+str	COMPSEC_	212	-	212	///	CHAR	1
+	COMPSECX	213	-	220	///		8
+str	COMP_ECX	221	-	221	///	CHAR	1
+str	CORBLOCK	222	-	222	///	CHAR	1
+str	CORB_OCK	223	-	223	///	CHAR	1
+str	CORBRICK	224	-	224	///	CHAR	1
+str	CORB_ICK	225	-	225	///	CHAR	1
+str	CORCONCR	226	-	226	///	CHAR	1
+str	CORC_NCR	227	-	227	///	CHAR	1
+str	CORDONT	228	-	228	///	CHAR	1
+str	CORDONT_	229	-	229	///	CHAR	1
+str	CORFRAME	230	-	230	///	CHAR	1
+str	CORF_AME	231	-	231	///	CHAR	1
+str	COROTHER	232	-	232	///	CHAR	1
+str	CORO_HER	233	-	233	///	CHAR	1
+str	CORSTONE	234	-	234	///	CHAR	1
+str	CORS_ONE	235	-	235	///	CHAR	1
+	CSHCNTBX	236	-	243	///		8
+str	CSHC_TBX	244	-	244	///	CHAR	1
+str	CUREMPL1	245	-	245	///	CHAR	1
+str	CURE_PL1	246	-	246	///	CHAR	1
+str	CUREMPL2	247	-	247	///	CHAR	1
+str	CURE_PL2	248	-	248	///	CHAR	1
+str	CUTENURE	249	-	249	///	CHAR	1
+str	CUTE_URE	250	-	250	///	CHAR	1
+str	DONTKNOW	251	-	252	///	CHAR	2
+str	DONT_NOW	253	-	253	///	CHAR	1
+str	EARNCOMP	254	-	254	///	CHAR	1
+str	EARN_OMP	255	-	255	///	CHAR	1
+	EARNINCX	256	-	264	///		9
+str	EARN_NCX	265	-	265	///	CHAR	1
+str	EDUC_REF	266	-	266	///	CHAR	1
+str	EDUC0REF	267	-	267	///	CHAR	1
+str	EDUCA2	268	-	269	///	CHAR	2
+str	EDUCA2_	270	-	270	///	CHAR	1
+str	ELECCOOK	271	-	272	///	CHAR	2
+str	ELEC_OOK	273	-	273	///	CHAR	1
+str	ELECTRIC	274	-	275	///	CHAR	2
+str	ELEC_RIC	276	-	276	///	CHAR	1
+str	ENCPORCH	277	-	277	///	CHAR	1
+str	ENCP_RCH	278	-	278	///	CHAR	1
+str	EXALUMIN	279	-	279	///	CHAR	1
+str	EXAL_MIN	280	-	280	///	CHAR	1
+str	EXASBEST	281	-	281	///	CHAR	1
+str	EXAS_EST	282	-	282	///	CHAR	1
+str	EXBLOCK	283	-	283	///	CHAR	1
+str	EXBLOCK_	284	-	284	///	CHAR	1
+str	EXBRICK	285	-	285	///	CHAR	1
+str	EXBRICK_	286	-	286	///	CHAR	1
+str	EXOTHER	287	-	287	///	CHAR	1
+str	EXOTHER_	288	-	288	///	CHAR	1
+str	EXSHINGL	289	-	289	///	CHAR	1
+str	EXSH_NGL	290	-	290	///	CHAR	1
+str	EXSIDING	291	-	291	///	CHAR	1
+str	EXSI_ING	292	-	292	///	CHAR	1
+str	EXSTONE	293	-	293	///	CHAR	1
+str	EXSTONE_	294	-	294	///	CHAR	1
+str	EXSTUCCO	295	-	295	///	CHAR	1
+str	EXST_CCO	296	-	296	///	CHAR	1
+	FAM_SIZE	297	-	298	///		2
+str	FAM__IZE	299	-	299	///	CHAR	1
+str	FAM_TYPE	300	-	300	///	CHAR	1
+str	FAM__YPE	301	-	301	///	CHAR	1
+	FAMTFEDX	302	-	309	///		8
+str	FAMT_EDX	310	-	310	///	CHAR	1
+	FEDRFNDX	311	-	318	///		8
+str	FEDR_NDX	319	-	319	///	CHAR	1
+	FEDTAXX	320	-	327	///		8
+str	FEDTAXX_	328	-	328	///	CHAR	1
+	FFRMINCX	329	-	337	///		9
+str	FFRM_NCX	338	-	338	///	CHAR	1
+	FGOVRETX	339	-	346	///		8
+str	FGOV_ETX	347	-	347	///	CHAR	1
+	FINCATAX	348	-	356	///		9
+str	FINCAT_X	357	-	357	///	CHAR	1
+	FINCBTAX	358	-	366	///		9
+str	FINCBT_X	367	-	367	///	CHAR	1
+	FINDRETX	368	-	375	///		8
+str	FIND_ETX	376	-	376	///	CHAR	1
+	FININCX	377	-	384	///		8
+str	FININCX_	385	-	385	///	CHAR	1
+	FINLWT01	386	-	396	///		11
+	FINLWT02	397	-	407	///		11
+	FINLWT03	408	-	418	///		11
+	FINLWT04	419	-	429	///		11
+	FINLWT05	430	-	440	///		11
+	FINLWT06	441	-	451	///		11
+	FINLWT07	452	-	462	///		11
+	FINLWT08	463	-	473	///		11
+	FINLWT09	474	-	484	///		11
+	FINLWT10	485	-	495	///		11
+	FINLWT11	496	-	506	///		11
+	FINLWT12	507	-	517	///		11
+	FINLWT13	518	-	528	///		11
+	FINLWT14	529	-	539	///		11
+	FINLWT15	540	-	550	///		11
+	FINLWT16	551	-	561	///		11
+	FINLWT17	562	-	572	///		11
+	FINLWT18	573	-	583	///		11
+	FINLWT19	584	-	594	///		11
+	FINLWT20	595	-	605	///		11
+	FINLWT21	606	-	616	///		11
+	FIREPLCQ	617	-	619	///		3
+str	FIRE_LCQ	620	-	620	///	CHAR	1
+	FJSSDEDX	621	-	628	///		8
+str	FJSS_EDX	629	-	629	///	CHAR	1
+	FNONFRMX	630	-	638	///		9
+str	FNON_RMX	639	-	639	///	CHAR	1
+str	FORCEAIR	640	-	641	///	CHAR	2
+str	FORC_AIR	642	-	642	///	CHAR	1
+str	FOUNDATN	643	-	643	///	CHAR	1
+str	FOUN_ATN	644	-	644	///	CHAR	1
+	FPRIPENX	645	-	652	///		8
+str	FPRI_ENX	653	-	653	///	CHAR	1
+	FRRDEDX	654	-	661	///		8
+str	FRRDEDX_	662	-	662	///	CHAR	1
+	FRRETIRX	663	-	670	///		8
+str	FRRE_IRX	671	-	671	///	CHAR	1
+	FSALARYX	672	-	679	///		8
+str	FSAL_RYX	680	-	680	///	CHAR	1
+	FSLTAXX	681	-	688	///		8
+str	FSLTAXX_	689	-	689	///	CHAR	1
+	FSSIX	690	-	697	///		8
+str	FSSIX_	698	-	698	///	CHAR	1
+str	FUEL_OIL	699	-	700	///	CHAR	2
+str	FUEL0OIL	701	-	701	///	CHAR	1
+str	GAS	702	-	703	///	CHAR	2
+str	GAS_	704	-	704	///	CHAR	1
+str	GOVTCOST	705	-	705	///	CHAR	1
+str	GOVT_OST	706	-	706	///	CHAR	1
+str	GRAVTAIR	707	-	708	///	CHAR	2
+str	GRAV_AIR	709	-	709	///	CHAR	1
+str	GREENHSE	710	-	710	///	CHAR	1
+str	GREE_HSE	711	-	711	///	CHAR	1
+str	GUESTHSE	712	-	712	///	CHAR	1
+str	GUES_HSE	713	-	713	///	CHAR	1
+str	HALFSAMP	714	-	714	///	CHAR	1
+str	HALF_AMP	715	-	715	///	CHAR	1
+str	HEATFUEL	716	-	716	///	CHAR	1
+str	HEAT_UEL	717	-	717	///	CHAR	1
+	HH_CU_Q	718	-	718	///		1
+str	HH_CU_Q_	719	-	719	///	CHAR	1
+	HLFBATHQ	720	-	722	///		3
+str	HLFB_THQ	723	-	723	///	CHAR	1
+str	HTPUMPCT	724	-	725	///	CHAR	2
+str	HTPU_PCT	726	-	726	///	CHAR	1
+str	HTPUMPWL	727	-	728	///	CHAR	2
+str	HTPU_PWL	729	-	729	///	CHAR	1
+	INC_HRS1	730	-	732	///		3
+str	INC__RS1	733	-	733	///	CHAR	1
+	INC_HRS2	734	-	736	///		3
+str	INC__RS2	737	-	737	///	CHAR	1
+	INC_RNKU	738	-	746	///		9
+str	INC__NKU	747	-	747	///	CHAR	1
+	INCCONTX	748	-	755	///		8
+str	INCC_NTX	756	-	756	///	CHAR	1
+str	INCLASS	757	-	757	///	CHAR	1
+	INCLOSSA	758	-	765	///		8
+str	INCL_SSA	766	-	766	///	CHAR	1
+	INCLOSSB	767	-	774	///		8
+str	INCL_SSB	775	-	775	///	CHAR	1
+	INCNEED	776	-	783	///		8
+str	INCNEED_	784	-	784	///	CHAR	1
+str	INCNONW1	785	-	785	///	CHAR	1
+str	INCN_NW1	786	-	786	///	CHAR	1
+str	INCNONW2	787	-	787	///	CHAR	1
+str	INCN_NW2	788	-	788	///	CHAR	1
+str	INCOMEY1	789	-	789	///	CHAR	1
+str	INCO_EY1	790	-	790	///	CHAR	1
+str	INCOMEY2	791	-	791	///	CHAR	1
+str	INCO_EY2	792	-	792	///	CHAR	1
+str	INCSORC1	793	-	793	///	CHAR	1
+str	INCS_RC1	794	-	794	///	CHAR	1
+str	INCSORC2	795	-	795	///	CHAR	1
+str	INCS_RC2	796	-	796	///	CHAR	1
+str	INCSTAT1	797	-	797	///	CHAR	1
+str	INCS_AT1	798	-	798	///	CHAR	1
+str	INCSTAT2	799	-	799	///	CHAR	1
+str	INCS_AT2	800	-	800	///	CHAR	1
+	INCWEEK1	801	-	802	///		2
+str	INCW_EK1	803	-	803	///	CHAR	1
+	INCWEEK2	804	-	805	///		2
+str	INCW_EK2	806	-	806	///	CHAR	1
+str	INCY	807	-	807	///	CHAR	1
+str	INCY_	808	-	808	///	CHAR	1
+	INSRFNDX	809	-	816	///		8
+str	INSR_NDX	817	-	817	///	CHAR	1
+	INTEARNX	818	-	825	///		8
+str	INTE_RNX	826	-	826	///	CHAR	1
+	JOTAXNET	827	-	834	///		8
+str	JOTA_NET	835	-	835	///	CHAR	1
+str	KEROSENE	836	-	837	///	CHAR	2
+str	KERO_ENE	838	-	838	///	CHAR	1
+str	LOT_SIZE	839	-	840	///	CHAR	2
+str	LOT__IZE	841	-	841	///	CHAR	1
+	LUMPSUMX	842	-	849	///		8
+str	LUMP_UMX	850	-	850	///	CHAR	1
+str	MARITAL1	851	-	851	///	CHAR	1
+str	MARI_AL1	852	-	852	///	CHAR	1
+	MISCNTRX	853	-	860	///		8
+str	MISC_TRX	861	-	861	///	CHAR	1
+	MISCTAXX	862	-	869	///		8
+str	MISC_AXX	870	-	870	///	CHAR	1
+	MONYOWDX	871	-	878	///		8
+str	MONY_WDX	879	-	879	///	CHAR	1
+	NO_EARNR	880	-	881	///		2
+str	NO_E_RNR	882	-	882	///	CHAR	1
+	NO_EARNX	883	-	891	///		9
+str	NO_E_RNX	892	-	892	///	CHAR	1
+str	NO_FUEL	893	-	894	///	CHAR	2
+str	NO_FUEL_	895	-	895	///	CHAR	1
+str	NO_HEAT	896	-	897	///	CHAR	2
+str	NO_HEAT_	898	-	898	///	CHAR	1
+	NONINCMX	899	-	906	///		8
+str	NONI_CMX	907	-	907	///	CHAR	1
+	_AUTO	908	-	909	///		2
+str	__UTO	910	-	910	///	CHAR	1
+	OCCEXPNX	911	-	918	///		8
+str	OCCE_PNX	919	-	919	///	CHAR	1
+str	OCCUPRE1	920	-	921	///	CHAR	2
+str	OCCU_RE1	922	-	922	///	CHAR	1
+str	OCCUPRE2	923	-	924	///	CHAR	2
+str	OCCU_RE2	925	-	925	///	CHAR	1
+str	ORIGIN1	926	-	926	///	CHAR	1
+str	ORIGIN1_	927	-	927	///	CHAR	1
+str	ORIGIN2	928	-	928	///	CHAR	1
+str	ORIGIN2_	929	-	929	///	CHAR	1
+str	OTH_COOK	930	-	931	///	CHAR	2
+str	OTH__OOK	932	-	932	///	CHAR	1
+str	OTHERHT	933	-	934	///	CHAR	2
+str	OTHERHT_	935	-	935	///	CHAR	1
+	OTHRFNDX	936	-	943	///		8
+str	OTHR_NDX	944	-	944	///	CHAR	1
+	OTHRINCX	945	-	952	///		8
+str	OTHR_NCX	953	-	953	///	CHAR	1
+str	OWNLIVE	954	-	954	///	CHAR	1
+str	OWNLIVE_	955	-	955	///	CHAR	1
+str	PARK_FAC	956	-	956	///	CHAR	1
+str	PARK0FAC	957	-	957	///	CHAR	1
+	PARKINGQ	958	-	960	///		3
+str	PARK_NGQ	961	-	961	///	CHAR	1
+str	PATIO	962	-	962	///	CHAR	1
+str	PATIO_	963	-	963	///	CHAR	1
+	PENSIONX	964	-	971	///		8
+str	PENS_ONX	972	-	972	///	CHAR	1
+	PERSLT18	973	-	974	///		2
+str	PERS_T18	975	-	975	///	CHAR	1
+	PERSOT64	976	-	977	///		2
+str	PERS_T64	978	-	978	///	CHAR	1
+str	PLUM_FAC	979	-	979	///	CHAR	1
+str	PLUM0FAC	980	-	980	///	CHAR	1
+str	POPSIZE	981	-	981	///	CHAR	1
+str	PRINEARN	982	-	983	///	CHAR	2
+str	PRIN_ARN	984	-	984	///	CHAR	1
+	PTAXRFDX	985	-	992	///		8
+str	PTAX_FDX	993	-	993	///	CHAR	1
+str	PUBLHOUS	994	-	994	///	CHAR	1
+str	PUBL_OUS	995	-	995	///	CHAR	1
+str	PUBSEWER	996	-	996	///	CHAR	1
+str	PUBS_WER	997	-	997	///	CHAR	1
+	PURSSECX	998	-	1005	///		8
+str	PURS_ECX	1006	-	1006	///	CHAR	1
+str	QINTRVMO	1007	-	1008	///	CHAR	2
+str	QINTRVYR	1009	-	1010	///	CHAR	2
+str	QPREVIN1	1011	-	1012	///	CHAR	2
+str	QPRE_IN1	1013	-	1013	///	CHAR	1
+str	QPREVIN2	1014	-	1015	///	CHAR	2
+str	QPRE_IN2	1016	-	1016	///	CHAR	1
+str	RACE2	1017	-	1017	///	CHAR	1
+str	RACE2_	1018	-	1018	///	CHAR	1
+str	REF_RACE	1019	-	1019	///	CHAR	1
+str	REF__ACE	1020	-	1020	///	CHAR	1
+str	REGION	1021	-	1021	///	CHAR	1
+	RENTEQVX	1022	-	1027	///		6
+str	RENT_QVX	1028	-	1028	///	CHAR	1
+str	RESPSTAT	1029	-	1029	///	CHAR	1
+str	RESP_TAT	1030	-	1030	///	CHAR	1
+str	RMWFLUE	1031	-	1032	///	CHAR	2
+str	RMWFLUE_	1033	-	1033	///	CHAR	1
+str	RMWOFLUE	1034	-	1035	///	CHAR	2
+str	RMWO_LUE	1036	-	1036	///	CHAR	1
+	ROOMSQ	1037	-	1039	///		3
+str	ROOMSQ_	1040	-	1040	///	CHAR	1
+	SALEINCX	1041	-	1048	///		8
+str	SALE_NCX	1049	-	1049	///	CHAR	1
+	SAVACCTX	1050	-	1059	///		10
+str	SAVA_CTX	1060	-	1060	///	CHAR	1
+	SECESTX	1061	-	1070	///		10
+str	SECESTX_	1071	-	1071	///	CHAR	1
+	SELLSECX	1072	-	1081	///		10
+str	SELL_ECX	1082	-	1082	///	CHAR	1
+	SETLINSX	1083	-	1090	///		8
+str	SETL_NSX	1091	-	1091	///	CHAR	1
+str	SEX_REF	1092	-	1092	///	CHAR	1
+str	SEX_REF_	1093	-	1093	///	CHAR	1
+str	SEX2	1094	-	1094	///	CHAR	1
+str	SEX2_	1095	-	1095	///	CHAR	1
+str	SIMHOUS	1096	-	1096	///	CHAR	1
+str	SIMHOUS_	1097	-	1097	///	CHAR	1
+	SIMHOUSX	1098	-	1103	///		6
+str	SIMH_USX	1104	-	1104	///	CHAR	1
+	SLOCTAXX	1105	-	1112	///		8
+str	SLOC_AXX	1113	-	1113	///	CHAR	1
+	SLRFUNDX	1114	-	1121	///		8
+str	SLRF_NDX	1122	-	1122	///	CHAR	1
+str	SOLARCK	1123	-	1124	///	CHAR	2
+str	SOLARCK_	1125	-	1125	///	CHAR	1
+str	SOLARHT	1126	-	1127	///	CHAR	2
+str	SOLARHT_	1128	-	1128	///	CHAR	1
+	SSOVERPX	1129	-	1136	///		8
+str	SSOV_RPX	1137	-	1137	///	CHAR	1
+str	ST_HOUS	1138	-	1138	///	CHAR	1
+str	ST_HOUS_	1139	-	1139	///	CHAR	1
+str	STEAMSYS	1140	-	1141	///	CHAR	2
+str	STEA_SYS	1142	-	1142	///	CHAR	1
+str	STORIES	1143	-	1144	///	CHAR	2
+str	STORIES_	1145	-	1145	///	CHAR	1
+str	SWIMPOOL	1146	-	1146	///	CHAR	1
+str	SWIM_OOL	1147	-	1147	///	CHAR	1
+	TAXPROPX	1148	-	1155	///		8
+str	TAXP_OPX	1156	-	1156	///	CHAR	1
+str	TENNISCT	1157	-	1157	///	CHAR	1
+str	TENN_SCT	1158	-	1158	///	CHAR	1
+str	TERRACE	1159	-	1159	///	CHAR	1
+str	TERRACE_	1160	-	1160	///	CHAR	1
+	TOTTXPDX	1161	-	1169	///		9
+str	TOTT_PDX	1170	-	1170	///	CHAR	1
+	UNEMPLX	1171	-	1178	///		8
+str	UNEMPLX_	1179	-	1179	///	CHAR	1
+	USBNDX	1180	-	1187	///		8
+str	USBNDX_	1188	-	1188	///	CHAR	1
+	VEHQ	1189	-	1190	///		2
+str	VEHQ_	1191	-	1191	///	CHAR	1
+str	WALLFURN	1192	-	1193	///	CHAR	2
+str	WALL_URN	1194	-	1194	///	CHAR	1
+str	WATER	1195	-	1195	///	CHAR	1
+str	WATER_	1196	-	1196	///	CHAR	1
+str	WATERHT	1197	-	1197	///	CHAR	1
+str	WATERHT_	1198	-	1198	///	CHAR	1
+	WDBSASTX	1199	-	1208	///		10
+str	WDBS_STX	1209	-	1209	///	CHAR	1
+	WDBSGDSX	1210	-	1217	///		8
+str	WDBS_DSX	1218	-	1218	///	CHAR	1
+	WELFAREX	1219	-	1226	///		8
+str	WELF_REX	1227	-	1227	///	CHAR	1
+str	WOODCOOK	1228	-	1229	///	CHAR	2
+str	WOOD_OOK	1230	-	1230	///	CHAR	1
+using "fmly`year'`cdate'.txt", clear
+save fmly`year'`cdate', replace
+
+/// MEMB FILES
+
+
+infix ///
+	NEWID	1	-	7	///		8
+	intno	8 - 8 ///
+	AGE	9	-	11	///		3
+str	AGE_	12	-	12	///	CHAR	1
+	AMTFED	13	-	20	///		8
+str	AMTFED_	21	-	21	///	CHAR	1
+	ANFEDTX	22	-	29	///		8
+str	ANFEDTX_	30	-	30	///	CHAR	1
+	ANGOVRTX	31	-	38	///		8
+str	ANGO_RTX	39	-	39	///	CHAR	1
+	ANPRVPNX	40	-	47	///		8
+str	ANPR_PNX	48	-	48	///	CHAR	1
+	ANRRDEDX	49	-	56	///		8
+str	ANRR_EDX	57	-	57	///	CHAR	1
+	ANSLTX	58	-	65	///		8
+str	ANSLTX_	66	-	66	///	CHAR	1
+str	ARM_FORC	67	-	67	///	CHAR	1
+str	ARM__ORC	68	-	68	///	CHAR	1
+str	AWAY_COL	69	-	69	///	CHAR	1
+str	AWAY0COL	70	-	70	///	CHAR	1
+str	BSNSSTAT	71	-	71	///	CHAR	1
+str	BSNS_TAT	72	-	72	///	CHAR	1
+str	COMPLET	73	-	73	///	CHAR	1
+str	COMPLET_	74	-	74	///	CHAR	1
+str	CU_CODE	75	-	75	///	CHAR	1
+str	CU_CODE_	76	-	76	///	CHAR	1
+str	CUREMPL	77	-	77	///	CHAR	1
+str	CUREMPL_	78	-	78	///	CHAR	1
+str	CWRKSTAT	79	-	79	///	CHAR	1
+str	CWRK_TAT	80	-	80	///	CHAR	1
+str	EARNER	81	-	81	///	CHAR	1
+str	EARNER_	82	-	82	///	CHAR	1
+str	EARNTYPE	83	-	83	///	CHAR	1
+str	EARN_YPE	84	-	84	///	CHAR	1
+str	EDUCA	85	-	86	///	CHAR	2
+str	EDUCA_	87	-	87	///	CHAR	1
+str	EMPLCONT	88	-	88	///	CHAR	1
+str	EMPL_ONT	89	-	89	///	CHAR	1
+	FARMINCX	90	-	99	///		10
+str	FARM_NCX	100	-	100	///	CHAR	1
+str	FARMLOSS	101	-	101	///	CHAR	1
+str	FARM_OSS	102	-	102	///	CHAR	1
+	GOVRETX	103	-	110	///		8
+str	GOVRETX_	111	-	111	///	CHAR	1
+	GROSPAYX	112	-	121	///		10
+str	GROS_AYX	122	-	122	///	CHAR	1
+str	IN_COLL	123	-	123	///	CHAR	1
+str	IN_COLL_	124	-	124	///	CHAR	1
+	INC_HRSQ	125	-	127	///		3
+str	INC__RSQ	128	-	128	///	CHAR	1
+str	INCMEDCR	129	-	129	///	CHAR	1
+str	INCM_DCR	130	-	130	///	CHAR	1
+str	INCNONWK	131	-	131	///	CHAR	1
+str	INCN_NWK	132	-	132	///	CHAR	1
+str	INCOMEY	133	-	133	///	CHAR	1
+str	INCOMEY_	134	-	134	///	CHAR	1
+str	INCORP	135	-	135	///	CHAR	1
+str	INCORP_	136	-	136	///	CHAR	1
+str	INCSOURC	137	-	137	///	CHAR	1
+str	INCS_URC	138	-	138	///	CHAR	1
+str	INCSTAT	139	-	139	///	CHAR	1
+str	INCSTAT_	140	-	140	///	CHAR	1
+	INCWEEKQ	141	-	142	///		2
+str	INCW_EKQ	143	-	143	///	CHAR	1
+	INDRETX	144	-	153	///		10
+str	INDRETX_	154	-	154	///	CHAR	1
+str	JOBTYPE	155	-	155	///	CHAR	1
+str	JOBTYPE_	156	-	156	///	CHAR	1
+	JSSDEDX	157	-	162	///		6
+str	JSSDEDX_	163	-	163	///	CHAR	1
+str	MARITAL	164	-	164	///	CHAR	1
+str	MARITAL_	165	-	165	///	CHAR	1
+	MEMBNO	166	-	167	///		2
+str	MOSTEARN	168	-	168	///	CHAR	1
+str	MOST_ARN	169	-	169	///	CHAR	1
+str	NFRMLOSS	170	-	170	///	CHAR	1
+str	NFRM_OSS	171	-	171	///	CHAR	1
+	NONFARMX	172	-	181	///		10
+str	NONF_RMX	182	-	182	///	CHAR	1
+str	OCCUPREV	183	-	184	///	CHAR	2
+str	OCCU_REV	185	-	185	///	CHAR	1
+str	ORIGINR	186	-	186	///	CHAR	1
+str	PAYPERD	187	-	187	///	CHAR	1
+str	PAYPERD_	188	-	188	///	CHAR	1
+	PRIVPENX	189	-	196	///		8
+str	PRIV_ENX	197	-	197	///	CHAR	1
+str	PWRKSTAT	198	-	198	///	CHAR	1
+str	PWRK_TAT	199	-	199	///	CHAR	1
+str	QPREVIND	200	-	201	///	CHAR	2
+str	QPRE_IND	202	-	202	///	CHAR	1
+str	RACE	203	-	203	///	CHAR	1
+str	RACE_	204	-	204	///	CHAR	1
+	RRRDEDX	205	-	212	///		8
+str	RRRDEDX_	213	-	213	///	CHAR	1
+	RRRETIRX	214	-	221	///		8
+str	RRRE_IRX	222	-	222	///	CHAR	1
+	SALARYX	223	-	232	///		10
+str	SALARYX_	233	-	233	///	CHAR	1
+str	SCHLTYPE	234	-	234	///	CHAR	1
+str	SCHL_YPE	235	-	235	///	CHAR	1
+str	SCHMLSHR	236	-	236	///	CHAR	1
+str	SCHM_SHR	237	-	237	///	CHAR	1
+	SCHMLWKQ	238	-	239	///		2
+str	SCHM_WKQ	240	-	240	///	CHAR	1
+	SCHMLWKX	241	-	243	///		3
+str	SCHM_WKX	244	-	244	///	CHAR	1
+str	SEX	245	-	245	///	CHAR	1
+str	SEX_	246	-	246	///	CHAR	1
+	SLFEMPSS	247	-	252	///		6
+str	SLFE_PSS	253	-	253	///	CHAR	1
+	SLTAXX	254	-	261	///		8
+str	SLTAXX_	262	-	262	///	CHAR	1
+	SOCRRX	263	-	270	///		8
+str	SOCRRX_	271	-	271	///	CHAR	1
+	SS_RRQ	272	-	273	///		2
+str	SS_RRQ_	274	-	274	///	CHAR	1
+	SSIX	275	-	282	///		8
+str	SSIX_	283	-	283	///	CHAR	1
+str	SSNORM	284	-	284	///	CHAR	1
+str	SSNORM_	285	-	285	///	CHAR	1
+using "memb`year'`cdate'.txt", clear
+save memb`year'`cdate', replace
+
+
+/// MTAB FILES
+
+
+infix ///
+	NEWID	1	-	7	///		8
+	intno	8 - 8 ///
+str	UCC	9	-	14	///	CHAR	6
+	COST	15	-	26	///		12
+str	COST_	27	-	27	///	CHAR	1
+str	GIFT	28	-	28	///	CHAR	1
+str	PUBFLAG	29	-	29	///	CHAR	1
+str	REF_MO	30	-	31	///	CHAR	2
+str	REF_YR	32	-	33	///	CHAR	2
+using "mtab`year'`cdate'.txt", clear
+save mtab`year'`cdate', replace
+
+
+/// ITAB FILES
+
+
+infix ///
+	NEWID	1	-	7	///		8
+	intno	8 - 8 ///
+str	REF_MO	9	-	10	///	CHAR	2
+str	REF_YR	11	-	12	///	CHAR	2
+str	UCC	13	-	18	///	CHAR	6
+str	PUBFLAG	19	-	19	///	CHAR	1
+	COST	20	-	31	///		12
+str	COST_	32	-	32	///	CHAR	1
+using "itab`year'`cdate'.txt", clear
+save itab`year'`cdate', replace
+
+
+
+}
